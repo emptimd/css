@@ -6,7 +6,7 @@ guard 'livereload' do
 end
 
 # This will concatenate the javascript files specified in :files to public/js/all.js
-guard :concat, type: "js", files: %w(main module), input_dir: "js", output: "js/all"
+guard :concat, type: "js", files: %w(main), input_dir: "js", output: "js/all"
 
 guard 'uglify', :destination_file => "js/all.js" do
   watch (%r{js/all.js})
