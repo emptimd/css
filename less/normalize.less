@@ -289,6 +289,7 @@ textarea {
     font-family: inherit; /* 1 */
     font-size: 100%; /* 2 */
     margin: 0; /* 3 */
+    outline: none;/* 4 */
 }
 
 /**
@@ -336,6 +337,7 @@ input[type="submit"] {
 button[disabled],
 html input[disabled] {
     cursor: default;
+    color: rgb(84, 84, 84);
 }
 
 /**
@@ -403,4 +405,13 @@ textarea {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+}
+
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+input, textarea, select {
+    border: 1px solid rgb(204, 204, 204);
 }

@@ -25,22 +25,22 @@ svg:not(:root){overflow:hidden}
 figure{margin:0}
 fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}
 legend{border:0;padding:0;}
-button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}
+button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;outline:none;}
 button,input{line-height:normal}
 button,select{text-transform:none}
 button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;}
-button[disabled],html input[disabled]{cursor:default}
+button[disabled],html input[disabled]{cursor:default;color:#545454}
 input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;}
 input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}
 input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}
 button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
 textarea{overflow:auto;vertical-align:top;}
 table{border-collapse:collapse;border-spacing:0}
+input,textarea,select{border:1px solid #ccc}
 *,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 html{font-size:62.5%;-webkit-tap-highlight-color:rgba(0,0,0,0)}
 body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.428571429;color:#333;background-color:#fff}
 input,button,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}
-button,input,select[multiple],textarea{background-image:none}
 a{color:#428bca;text-decoration:none}
 a:hover,a:focus{color:#2a6496;text-decoration:underline}
 a:focus{outline:thin dotted #333;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}
@@ -939,3 +939,4 @@ th.visible-print,td.visible-print{display:none !important}
 .collapse{display:none}
 .collapse.in{display:block}
 .collapsing{position:relative;height:0;overflow:hidden;-webkit-transition:height .35s ease;transition:height .35s ease}
+body{font-family:'PT Sans'}
