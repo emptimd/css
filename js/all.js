@@ -1,1 +1,1 @@
-$(function(){$(window).scroll(function(){0!=$(this).scrollTop()?$("#bttop").fadeIn():$("#bttop").fadeOut()}),$("#bttop").click(function(){$("body,html").animate({scrollTop:0},800)})});
+jQuery(function(){});

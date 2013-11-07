@@ -7,7 +7,7 @@ source 'http://gems.rubyforge.org'
 
 group :development do
 gem 'rake'
-gem "execjs", "~> 2.0.2"	
+gem "execjs", "~> 2.0.2"
 gem "listen", "~> 1.3.1"
 require 'rbconfig'
 gem 'wdm', '>= 0.1.0' if RbConfig::CONFIG['target_os'] =~ /mswin|mingw/i
