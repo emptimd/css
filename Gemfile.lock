@@ -1,7 +1,5 @@
 GEM
   remote: https://rubygems.org/
-  remote: http://gems.github.com/
-  remote: http://gems.rubyforge.org/
   specs:
     chunky_png (1.2.8)
     coderay (1.0.9)
