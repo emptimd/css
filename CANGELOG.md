@@ -1,0 +1,11 @@
+=== HEAD
+
+
+=== 1.1.1 (November 9, 2013)
+Added js functions library
+Fixed border problem in Firefox
+Added some new styles in bootstrap.less
+
+=== 1.0.0 (November 2, 2013)
+
+Stalbe version!
