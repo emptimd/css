@@ -1,0 +1,28 @@
+{
+	"snippets":{
+		"html":{
+			"abbreviations":{
+
+				"norm":"<link rel='stylesheet' href='http://cdnjs.cloudflare.com/ajax/libs/normalize/2.1.0/normalize.css'>",
+				"scripts":"<script src='|'></script>",
+				"ph300":"<img src='http://placehold.it/300x200'>",
+				"ph100":"<img src='http://placehold.it/100x75'>",
+				"ph140":"<img src='http://placehold.it/140x100'>",
+
+				"jq":"<script src='http://code.jquery.com/jquery-2.0.0.min.js'></script>",
+				"pf":"<script src='http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.6/prefixfree.min.js'></script>",
+				"ls":"<script src='http://cdnjs.cloudflare.com/ajax/libs/less.js/1.3.3/less.min.js'></script>",
+				"pt":"<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'/>",
+				"os":"<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>"
+			}
+		},
+			"css":{
+				"abbreviations":{
+					"slight":"background-image: url(http://subtlepatterns.com/patterns/ticks.png);",
+					"sdark":"background-image: url(http://subtlepatterns.com/patterns/binding_dark.png);",
+					"grd":".gradient(@${1:col},@${2:col2});",
+					"clf":".clearfix();"
+				}
+			}
+		}
+}
