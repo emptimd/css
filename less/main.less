@@ -6,11 +6,42 @@
 /*-------------------------------------------------*/
 /* =  General
 /*-------------------------------------------------*/
-
+@col: red;
+@col2: darken(@col, 30%);
 body {
 	font-family: 'PT Sans';
+	background-color: green;
+	color:red;
 }
 
+
+ul {
+	width: 500px;
+	height: 50px;
+	@color:#f05;
+	.ldf(@color,0,30%,80%);
+	.gradient(@col2,@ldf);
+	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	
+	li {
+		list-style-type: none;
+		a {
+			float: left;
+			display: block;
+			width: 70px;
+			height: 50px;
+			line-height: 50px;
+			-webkit-transition: all .5s;
+			-moz-transition: all .5s;
+			-ms-transition: all .5s;
+			-o-transition: all .5s;
+			transition: all .5s;
+		}
+	}
+}
 
 /*-------------------------------------------------*/
 /* =  Header

@@ -1,4 +1,37 @@
 /*
+div {
+    background-color: #e0e0e0;
+}
+p:extend(div) {
+    color: #101010;
+}
+
+.parent {
+    font-size:12pt;
+}
+.child {
+    &:extend(.parent);
+}
+
+.a.b.test,
+.test.c {
+    color: orange;
+}
+.test {
+  &:hover {
+    color: green;
+    }
+}
+.replacement :extend(.test all) {
+}
+
+@base-url: "http://assets.fnord.com";
+background-image: url("@{base-url}/images/bg.png");
+
+@name: blocked;
+.@{name} {
+    color: black;
+}
 
 lighten(@color, 10%);     // возвращает цвет, который на 10% *светлее*, чем @color
 darken(@color, 10%);      // возвращает цвет, который на 10% *темнее*, чем @color
@@ -32,9 +65,17 @@ lightness(@color);  // возвращает канал светлоты (`lightn
 
 
 .clearfix() {
-  zoom: 1;
-  &:before { content: ''; display: block; }
-  &:after { content: ''; display: table; clear: both; }
+  *zoom: 1;
+  &:before { content: ''; display: table; }
+  &:after { content: ''; clear: both; }
+}
+
+.ldf(@color,@ld,@p,@f) when (isnumber(@ld)) and (@ld > 0) {
+	@ldf : fade(darken(@color, @p),@f);
+}
+
+.ldf(@color,@ld,@p,@f) when (isnumber(@ld)) and (@ld = 0) {
+	@ldf : fade(lighten(@color, @p),@f);
 }
 
 .rounded-corners (@radius: 5px) {
