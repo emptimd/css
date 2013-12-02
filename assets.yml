@@ -2,8 +2,9 @@ gzip_assets: off
 javascript_compressor: uglifier
 
 javascripts: 
-  common: 
-    - js/all.js 
+  all: 
+    - js/functions.js
+    - js/main.js 
 # stylesheets: 
 #   common: 
 #     - css/*.css

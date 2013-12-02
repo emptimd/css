@@ -1,12 +1,8 @@
 # A sample Guardfile
 # More info at https://github.com/guard/guard#readme
 
-#guard 'livereload' do
-  #watch(%r{.+\.(css|html|js)$})
-#end
-
  #This will concatenate the javascript files specified in :files to js/all.js
-guard :concat, type: "js", files: %w(main functions), input_dir: "js", output: "js/all"
+#guard :concat, type: "js", files: %w(functions main), input_dir: "js", output: "js/all"
 
 #guard 'uglify', :destination_file => "js/all.js" do
   #watch (%r{js/all.js})
@@ -23,6 +19,11 @@ guard :jammit,
 	:notifications => :false,
 	:config_path => "assets.yml",
 	:output_folder => "js" do
-	watch(%r{js/all.js})
+	watch(%r{js/main.js})
+	watch(%r{js/functions.js})
 	#watch(%r{^css/(main)\.css$})
+end
+
+guard 'livereload' do
+  watch(%r{.+\.(css|html|js)$})
 end
