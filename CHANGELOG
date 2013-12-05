@@ -1,0 +1,23 @@
+=== HEAD
+
+=== 1.2 (December 2, 2013)
+
+* Added few functions to js library
+
+* Added jammit for compile and minify!
+
+* Added few mixins in mixins.less
+
+* Added nice emmet snippets
+
+=== 1.1.1 (November 9, 2013)
+
+* Added js functions library
+
+* Fixed border problem in Firefox
+
+* Added some new styles in bootstrap.less
+
+=== 1.0.0 (November 2, 2013)
+
+Stalbe version!
