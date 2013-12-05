@@ -19,8 +19,8 @@ guard :jammit,
 	:notifications => :false,
 	:config_path => "assets.yml",
 	:output_folder => "js" do
-	watch(%r{js/main.js})
-	watch(%r{js/functions.js})
+	watch(%r{^js/(main|functions)\.js})
+	#watch(%r{js/functions.js})
 	#watch(%r{^css/(main)\.css$})
 end
 
