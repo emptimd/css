@@ -66,8 +66,8 @@ lightness(@color);  // возвращает канал светлоты (`lightn
 
 .clearfix() {
   *zoom: 1;
-  &:before { content: ''; display: table; }
-  &:after { content: ''; clear: both; }
+  &:before,&:after { content: ''; display: table; }
+  &:after { clear: both; }
 }
 
 .ldf(@color,@ld,@p,@f) when (isnumber(@ld)) and (@ld > 0) {
@@ -76,6 +76,20 @@ lightness(@color);  // возвращает канал светлоты (`lightn
 
 .ldf(@color,@ld,@p,@f) when (isnumber(@ld)) and (@ld = 0) {
 	@ldf : fade(lighten(@color, @p),@f);
+}
+
+.valign(@h) {
+	&:extend(.vertical_align_class all);
+	&:before {height: @h;}
+}
+
+.valigne() {
+	&:extend(.vale_class);
+}
+
+.dot(@max-width) {
+	&:extend(.dot_class);
+	max-width: @max-width;
 }
 
 .rounded-corners (@radius: 5px) {

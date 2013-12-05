@@ -1,0 +1,27 @@
+/*-------------------------------------------------*/
+/* =  In this file are situated classes that will never be outputed but are used in main.less
+/*-------------------------------------------------*/
+
+.vertical_align_class {
+	&:before {
+		content: '';
+		display: inline-block; zoom: 1; *display: inline; vertical-align: middle;
+	}
+}
+
+.vale_class {
+	display: inline-block; zoom: 1; *display: inline; vertical-align: middle;
+}
+
+.dot_class {
+	text-overflow: ellipsis; overflow: hidden; white-space: nowrap;
+}
+
+#namespace {
+	.getHeight(@n,@h){
+		.@{n} {
+			height:@h;
+			@control:@n;
+		}
+	}
+}

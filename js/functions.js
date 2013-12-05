@@ -10,10 +10,11 @@ $.fn.alignCenter = function() {
 
 	//Align element in the middle of the parent
 $.fn.alignParentCenter = function() {
-	var marginTop = parseInt($(this).parent().height()/2 - $(this).height()/2) + 'px';
-	var marginLeft = parseInt($(this).parent().width()/2 - $(this).width()/2) + 'px';
+	var $this = $(this);
+	var marginTop = parseInt($this.parent().height()/2 - $this.height()/2) + 'px';
+	var marginLeft = parseInt($this.parent().width()/2 - $this.width()/2) + 'px';
 	//return updated element
-	return $(this).css({'margin-top':marginTop,'margin-left':marginLeft});
+	return $this.css({'margin-top':marginTop,'margin-left':marginLeft});
 };
 
 /**
