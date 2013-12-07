@@ -57,9 +57,9 @@ $.fn.alignParentCenter = function() {
 /**
  * Automaticaly add * for label that contains *:required. 
  */
-// function label_required() {
-//  $('*:required').parent('label').append('*');
-// }
+function label_required() {
+ $('*:required').parent('label').append('*');
+}
 
 
 /**
