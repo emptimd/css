@@ -1,8 +1,4 @@
-							/*=================Importing less files============*/				
-@import 'mixins';
-@import 'normalize';
-@import 'bootstrap';
-@import (reference) "classes";
+@import '_import';
 /*-------------------------------------------------*/
 /* =  General
 /*-------------------------------------------------*/
@@ -10,7 +6,7 @@
 @col2: darken(@col, 30%);
 body {
 	font-family: 'PT Sans';
-	background-color: green;
+	background-color: orange;
 	color:red;
 }
 
@@ -42,6 +38,55 @@ ul {
 		}
 	}
 }
+
+#dot {
+	.dot(450px); /* Cut element and add 3 dots */
+}
+
+/*-------------------------------------------------*/
+/* =  BOX
+/*-------------------------------------------------*/
+
+#box {
+	margin: 0 auto;
+	margin-bottom: 50px;
+	width: 300px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	color: green;
+	@h300:300px;
+	height: @h300;
+	@color:red;
+	.ldf(@color,1,20%,80%);
+	background-color: @color;
+	-webkit-box-shadow: 0 0 0 50px @ldf;
+	-moz-box-shadow: 0 0 0 50px @ldf;
+	box-shadow: 0 0 0 50px @ldf;
+	.valign(@h300);
+	text-align:center;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-ms-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+	.centered {
+		.valigne; /* This elment is totally centered */
+	}
+	&:hover {
+		cursor: pointer;
+		.ldf(@color,0,20%,100%);
+		color: @ldf;
+	}
+}
+
+/*-------------------------------------------------*/
+/* =  END BOX
+/*-------------------------------------------------*/
+
+
+
+
 
 /*-------------------------------------------------*/
 /* =  Header
@@ -79,10 +124,9 @@ ul {
 /* =  END Footer
 /*-------------------------------------------------*/
 
-/* Back to top */
+/* Back to top */ 
 
 /*#bttop {
-	
 	background-image: url('../img/icon/backtotop.png');
 	background-position: 0 0;
 	background-repeat: no-repeat;

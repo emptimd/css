@@ -1,7 +1,8 @@
 jQuery(function($) {
-	label_require();
+	// $('#myModal').modal();
 	/**
 	 * Script for back-to-top button effect
 	 */
 	// window_scrool();
-});
+}); 
+ 

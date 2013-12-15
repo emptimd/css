@@ -24,6 +24,6 @@ guard :jammit,
 	#watch(%r{^css/(main)\.css$})
 end
 
-guard 'livereload' do
-  watch(%r{.+\.(css|html|js)$})
-end
+#guard 'livereload' do
+  #watch(%r{.+\.(css|html|js)$})
+#end

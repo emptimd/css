@@ -89,7 +89,20 @@ lightness(@color);  // возвращает канал светлоты (`lightn
 
 .dot(@max-width) {
 	&:extend(.dot_class);
-	max-width: @max-width;
+	max-height: @max-width;
+}
+
+// Placeholder text
+.placeholder(@color) {
+  &:-moz-placeholder            { color: @color; } // Firefox 4-18
+  &::-moz-placeholder           { color: @color;   // Firefox 19+
+                                  opacity: 1; } // See https://github.com/twbs/bootstrap/pull/11526
+  &:-ms-input-placeholder       { color: @color; } // Internet Explorer 10+
+  &::-webkit-input-placeholder  { color: @color; } // Safari and Chrome
+}
+
+.img-responsive() {
+	&:extend(.img_responsive_class);
 }
 
 .rounded-corners (@radius: 5px) {
