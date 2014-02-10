@@ -47,3 +47,19 @@
 	}
 
 }
+
+
+
+
+-------
+
+{
+	"auto_id_class": true,
+	"translate_spaces_to_tabs": true,
+	"tab_size": 4,
+	"font_size": 15,
+	"ignored_packages":
+	[
+		"Vintage"
+	]
+}
